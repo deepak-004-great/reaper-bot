@@ -2,7 +2,7 @@
 
 A Telegram bot that maintains persistent conversation memory across sessions and generates context-aware responses by injecting SQLite history into every LLM request — instead of treating each message independently.
 
-Built end-to-end in Python. Deployed on Railway.
+Built end-to-end in Python with environment-based configuration for cloud deployment.
 
 ---
 
