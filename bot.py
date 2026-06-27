@@ -6,11 +6,12 @@ import pytz
 from datetime import datetime, timedelta
 from groq import Groq
 
-# CONFIG
-TELEGRAM_TOKEN = "8751196047:AAFyaX7zkBbGlaYqr2qnG61BLdAeGY6Hvd8"
-GROQ_API_KEY   = "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"
-MY_CHAT_ID     = 1499404624
-LEETCODE_USER  = "reaper_8"
+# CONFIG — all secrets loaded from environment variables
+import os
+TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
+GROQ_API_KEY   = os.environ["GROQ_API_KEY"]
+MY_CHAT_ID     = int(os.environ["MY_CHAT_ID"])
+LEETCODE_USER  = os.environ.get("LEETCODE_USERNAME", "reaper_8")
 TIMEZONE       = pytz.timezone("Asia/Kolkata")
 BASE_URL       = "https://api.telegram.org/bot" + TELEGRAM_TOKEN
 
