@@ -27,8 +27,6 @@ Built end-to-end in Python with environment-based configuration for cloud deploy
 
 ## Database Schema
 
-![Database Schema](diagrams/database.png)
-
 ```
 chat_history     — full conversation log with timestamps
 logs             — study sessions (DSA/ML), proofs, completions
@@ -128,5 +126,6 @@ All credentials are loaded from environment variables. No secrets in source code
 
 ## Author
 
-**Deepak kumar**
+**Deepak Kumar**
 
+**ECE (AI/ML) Undergraduate**
